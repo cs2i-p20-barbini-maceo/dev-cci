@@ -1,4 +1,4 @@
-name: CI/CD — Next.js
+name: CI/CD
 
 on:
   push:
@@ -9,9 +9,6 @@ on:
       - main
 
 jobs:
-  # ─────────────────────────────────────────
-  # 1. Lint + Tests + Build
-  # ─────────────────────────────────────────
   build-and-test:
     name: Build & Test
     runs-on: ubuntu-latest
