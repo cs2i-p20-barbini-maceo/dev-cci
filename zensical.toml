@@ -11,7 +11,7 @@
 # The site_name is shown in the page header and the browser window title
 #
 # Read more: https://zensical.org/docs/setup/basics/#site_name
-site_name = "Documentation"
+site_name = "Markdown"
 
 # The site_description is included in the HTML head and should contain a
 # meaningful description of the site content for use by search engines.
@@ -34,7 +34,7 @@ site_author = "<your name here>"
 #
 # Read more: https://zensical.org/docs/setup/basics/#copyright
 copyright = """
-Copyright &copy; 2026 The authors
+Copyright &copy; 2026 Kilroy
 """
 
 # Zensical supports both implicit navigation and explicitly defined navigation.
@@ -44,10 +44,15 @@ Copyright &copy; 2026 The authors
 # can be defined using TOML syntax.
 #
 # Read more: https://zensical.org/docs/setup/navigation/
-# nav = [
-#   { "Get started" = "index.md" },
-#   { "Markdown in 5min" = "markdown.md" },
-# ]
+nav = [
+  { "Le langage Markdown" = "index.md" },
+  { "Titres" = "titres.md" },
+  { "Syntaxe de base" = "syntaxe.md" },
+  { "Listes" = "listes.md" },
+  { "Code" = "code.md" },
+  { "Tableaux" = "tableaux.md" },
+  { "Mermaid" = "mermaid.md" },
+]
 
 # With the "extra_css" option you can add your own CSS styling to customize
 # your Zensical project according to your needs. You can add any number of
