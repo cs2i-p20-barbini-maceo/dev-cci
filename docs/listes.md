@@ -4,58 +4,92 @@ icon: lucide/list
 
 # Listes
 
-## Listes non ordonnées
+## Listes à puces
 
-Une liste non ordonnée s'obtient en préfixant chaque élément par `-`, `*` ou `+`.
-
-=== "Exemple"
+=== "Code"
 
     ```markdown
-    - Élément 1
-    - Élément 2
-    - Élément 3
+    - alpha
+    - bravo
+    - charlie
+        - delta
+        - echo
+    - foxtrot
+    - golf
     ```
 
 === "Résultat"
 
-    - Élément 1
-    - Élément 2
-    - Élément 3
+    - alpha
+    - bravo
+    - charlie
+        - delta
+        - echo
+    - foxtrot
+    - golf
 
-## Listes ordonnées
+## Listes numérotées
 
-Une liste ordonnée s'obtient en préfixant chaque élément par un numéro suivi d'un point.
-
-=== "Exemple"
+=== "Code"
 
     ```markdown
-    1. Premier élément
-    2. Deuxième élément
-    3. Troisième élément
+    1. alpha
+    2. bravo
+    3. charlie
+        1. delta
+        2. echo
+    4. foxtrot
+    5. golf
     ```
 
 === "Résultat"
 
-    1. Premier élément
-    2. Deuxième élément
-    3. Troisième élément
+    1. alpha
+    2. bravo
+    3. charlie
+        1. delta
+        2. echo
+    4. foxtrot
+    5. golf
 
-## Listes imbriquées
+## Listes mixtes
 
-On peut imbriquer des listes en indentant avec 4 espaces.
-
-=== "Exemple"
+=== "Code"
 
     ```markdown
-    - Élément 1
-        - Sous-élément 1.1
-        - Sous-élément 1.2
-    - Élément 2
+    - alpha
+    - bravo
+        1. charlie
+        2. delta
+        3. echo
+    - foxtrot
+    - golf
     ```
 
 === "Résultat"
 
-    - Élément 1
-        - Sous-élément 1.1
-        - Sous-élément 1.2
-    - Élément 2
+    - alpha
+    - bravo
+        1. charlie
+        2. delta
+        3. echo
+    - foxtrot
+    - golf
+
+## Listes de tâches
+
+=== "Code"
+
+    ```markdown
+    - [ ] Faire ceci
+    - [ ] Faire cela
+    - [ ] Faire autre chose
+    - [x] Ne rien faire
+    ```
+
+=== "Résultat"
+
+    - [ ] Faire ceci
+    - [ ] Faire cela
+    - [ ] Faire autre chose
+    - [x] Ne rien faire
