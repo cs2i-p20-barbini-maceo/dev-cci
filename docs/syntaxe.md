@@ -42,34 +42,3 @@ L'*italique* s'obtient en entourant du texte par 1 astérisque, ou 1 souligné (
     Le mot *Markdown* seul est en italique.
     On peut combiner le **gras et l'*italique***.
 
-## Texte barré
-
-Un texte est barré s'il est entouré d'un double tilde, soit `~~`.
-
-=== "Exemple"
-
-    ```markdown
-    ~~Cette phrase est barrée.~~
-    ```
-
-=== "Résultat"
-
-    ~~Cette phrase est barrée.~~
-
-## Surbrillance
-
-Une ==surbrillance== s'obtient en entourant du texte par 2 signes `=`.
-
-=== "Exemple"
-
-    ```markdown
-    Cette phrase est normale.
-    ==Cette phrase est en surbrillance.==
-    Le mot ==Markdown== seul est en surbrillance.
-    ```
-
-=== "Résultat"
-
-    Cette phrase est normale.
-    ==Cette phrase est en surbrillance.==
-    Le mot ==Markdown== seul est en surbrillance.
