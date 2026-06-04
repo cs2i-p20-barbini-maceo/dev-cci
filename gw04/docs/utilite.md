@@ -18,5 +18,5 @@ Dès que tu pousses du code sur GitHub, le workflow peut construire et déployer
 
 ### Vérifier la qualité du code
 
-Un workflow peut analyser ton code pour détecter les mauvaises pratiques, les fautes de style, ou les oublis. On appelle ça le **linting**.
+Un workflow peut analyser ton code pour détecter les mauvaises pratiques, les fautes de style, ou les oublis.
 
