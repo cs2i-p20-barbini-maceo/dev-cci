@@ -52,7 +52,6 @@ nav = [
   { "Code" = "code.md" },
   { "Tableaux" = "tableaux.md" },
   { "Mermaid" = "mermaid.md" },
-  { "Workflows GitHub" = { "Dans quel cadre ?" = "workflows/cadre.md", "À quoi servent-ils ?" = "workflows/utilite.md", "Quels sont leurs intérêts ?" = "workflows/interets.md", "Comment fonctionnent-ils ?" = "workflows/fonctionnement.md" } },
 ]
 
 # With the "extra_css" option you can add your own CSS styling to customize
