@@ -46,47 +46,4 @@ jobs:
 
 > `runs-on: ubuntu-latest` signifie : "utilise une machine Linux toute neuve".
 
-### 3. Les étapes (steps)
 
-Chaque job est découpé en **étapes** qui s'exécutent dans l'ordre.
-
-```yaml
-steps:
-  - name: Récupérer le code
-    uses: actions/checkout@v4
-
-  - name: Installer les dépendances
-    run: npm install
-
-  - name: Lancer les tests
-    run: npm test
-
-  - name: Publier le site
-    run: npm run build
-```
-
-## Le schéma complet
-
-```
-git push
-   │
-   ▼
-GitHub détecte le push
-   │
-   ▼
-Workflow déclenché
-   │
-   ▼
-Une machine virtuelle démarre
-   │
-   ▼
-Les étapes s'exécutent dans l'ordre
-   │
-   ▼
-✅ Succès → site publié
-❌ Échec  → on est prévenu, rien n'est publié
-```
-
-!!! info "Les GitHub Actions"
-
-    Chaque étape peut utiliser une **Action** toute faite, partagée par la communauté. Par exemple `actions/checkout@v4` récupère automatiquement le code du projet. On n'a pas besoin de tout recoder soi-même.
