@@ -2,6 +2,7 @@
 site_name = "Workflows GitHub"
 site_description = "Rétrospective sur les GitHub Actions Workflows"
 site_author = "Macéo Barbini"
+site_url = "https://cs2i-p20-barbini-maceo.github.io/dev-cci/"
 
 copyright = """
 Copyright &copy; 2026 Macéo Barbini
