@@ -21,9 +21,9 @@ jobs:
         with:
           python-version: 3.x
       - run: pip install zensical
-      - run: zensical build --clean
+      - run: cd gw04 && zensical build --clean
       - uses: actions/upload-pages-artifact@v5
         with:
-          path: site
+          path: gw04/site
       - uses: actions/deploy-pages@v5
         id: deployment
