@@ -9,6 +9,7 @@ Copyright &copy; 2026 Macéo Barbini
 """
 
 nav = [
+  { "Accueil" = "index.md" },
   { "Dans quel cadre ?" = "cadre.md" },
   { "À quoi servent-ils ?" = "utilite.md" },
   { "Quels sont leurs intérêts ?" = "interets.md" },
