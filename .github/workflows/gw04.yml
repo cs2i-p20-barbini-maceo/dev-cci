@@ -1,0 +1,36 @@
+name: GW04
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Récupérer le code
+        uses: actions/checkout@v4
+
+      - name: Construire l'image Docker
+        run: docker build -t gw04 ./gw04
+
+      - name: Vérifier les dépendances installées
+        run: docker run --rm gw04 pip list
+
+      - name: Lancer le conteneur
+        run: |
+          mkdir -p output
+          docker run --rm \
+            -v ${{ github.workspace }}/output:/output \
+            gw04
+
+      - name: Afficher le fichier généré
+        run: cat output/demo.txt
+
+      - name: Sauvegarder le fichier en artefact
+        uses: actions/upload-artifact@v4
+        with:
+          name: demo
+          path: output/demo.txt
